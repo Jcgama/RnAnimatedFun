@@ -7,6 +7,7 @@ import React from 'react';
 import {SafeAreaView, Text, StatusBar} from 'react-native';
 import styles from './style';
 import COLORS from '../../constants/colors';
+import Header from '../../components/Header';
 
 const Home: () => React$Node = () => {
   return (
@@ -16,7 +17,7 @@ const Home: () => React$Node = () => {
         backgroundColor={COLORS.PRIMARY_BLUE}
       />
       <SafeAreaView style={styles.container}>
-        <Text>Ola mundo</Text>
+        <Header />
       </SafeAreaView>
     </>
   );
